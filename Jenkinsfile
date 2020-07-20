@@ -12,7 +12,7 @@ node ('ubuntuagent1'){
     }
     stage('Post-to-dockerhub') {
     
-     docker.withRegistry('https://registry.hub.docker.com', 'training_creds') {
+     docker.withRegistry('https://registry.hub.docker.com', 'dockercred') {
             app.push("v1")
         			}
          }
