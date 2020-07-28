@@ -25,6 +25,8 @@ node ('ubuntuagent1'){
     stage('imagescanner') {
         /* Let's make sure we have the repository cloned to our workspace */
        build 'aquamicroscanner'
+        
+    }
   
     stage('Pull-image-server') {
     
