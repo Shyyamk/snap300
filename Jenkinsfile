@@ -35,7 +35,7 @@ node ('ubuntuagent1'){
       }
         
         stage('DAST'){
-         build 'aquamicroscanner'    
+         build 'owaspzap'    
         }
 
 }
